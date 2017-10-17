@@ -14,3 +14,11 @@
     transform: translate(-50%, -50%);
 }
 ```
+
+## jquery
+
+* jquery阻止事件冒泡
+
+```javascript
+event.stopPropagation();
+```
