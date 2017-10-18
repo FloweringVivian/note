@@ -22,3 +22,11 @@
 ```javascript
 event.stopPropagation();
 ```
+
+* jquery判断是否显示或隐藏
+
+```javascript
+if($("#test").is(':visible')){...}  //是否显示
+
+if($("#test").is(":hidden")){...}  //是否隐藏
+```
