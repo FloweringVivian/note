@@ -15,6 +15,46 @@
 }
 ```
 
+* 移动端弹层从右往左划出效果CSS实现
+
+```javascript
+.layer{
+    position: fixed;
+    right: 0;
+    top: 0;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+}
+.layer.in{
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+```
+
+* 移动端弹层从下往上划出效果CSS实现
+
+```javascript
+.layer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+}
+.layer.in{
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+```
+
 ## jquery
 
 * jquery阻止事件冒泡
