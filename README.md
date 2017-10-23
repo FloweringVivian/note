@@ -71,4 +71,18 @@ if($("#test").is(':visible')){...}  //是否显示
 if($("#test").is(":hidden")){...}  //是否隐藏
 ```
 
+* jquery select操作
+
+```javascript
+$(".selector").val("pxx");  //设置value为pxx的项选中
+
+$(".selector").find("option[text='pxx']").prop("selected",true);  //设置text为pxx的项选中
+
+$(".selector").val();  //获取当前选中项的value
+
+$(".selector").find("option:selected").text();  //获取当前选中项的text
+
+
+```
+
 
