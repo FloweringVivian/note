@@ -83,4 +83,19 @@ $(".selector").val();  //获取当前选中项的value
 $(".selector").find("option:selected").text();  //获取当前选中项的text
 ```
 
+## CSS
+
+* 去掉谷歌浏览器input记住账号或密码时默认出现的黄色背景
+
+直接用css的内阴影来覆盖黄色
+
+```javascript
+input:-webkit-autofill { 
+    -webkit-box-shadow: 0 0 0px 1000px white inset; 
+} 
+```
+
+如果要关闭form表单的自动填充功能，加autocomplete="off"，不过有时不管用。
+
+
 
