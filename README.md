@@ -97,6 +97,14 @@ input:-webkit-autofill {
 
 如果要关闭form表单的自动填充功能，加autocomplete="off"，不过有时不管用。
 
+* table表格固定列宽
+
+```javascript
+table{
+    table-layout:fixed;
+}
+```
+
 
 
 
