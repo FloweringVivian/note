@@ -147,6 +147,23 @@ $scope.cityList = [
 $scope.city = 1;
 ```
 
+3.数据格式为Key-Values数组对象格式
+
+```javascript
+//html
+<select ng-model="site" ng-options="y.brand for (x, y) in cars"></select>
+
+//js
+$scope.cars = {
+    car1 : {brand : "BYD", model : "Y50", color : "red"},
+    car2 : {brand : "CC", model : "HF", color : "white"},
+    car3 : {brand : "JL", model : "JL10D", color : "black"}
+};
+
+//select默认选中
+$scope.site = "BYD";
+```
+
 ## CSS
 
 * 去掉谷歌浏览器input记住账号或密码时默认出现的黄色背景
