@@ -104,6 +104,7 @@ angular其他js（directives,service,controller等）
 
 //js
 $scope.cityList = ["北京", "河北", "河南", "陕西"];
+
 //select默认选中
 $scope.city = "北京";
 ```
@@ -123,6 +124,7 @@ $scope.cityList = [
     {"id": 3, "name": "河南"},
     {"id": 4, "name": "陕西"},
 ];
+
 //select默认选中
 $scope.city = "北京";
 ```
@@ -140,6 +142,7 @@ $scope.cityList = [
     {"id": 3, "name": "河南"},
     {"id": 4, "name": "陕西"},
 ];
+
 //select默认选中
 $scope.city = 1;
 ```
