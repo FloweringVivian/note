@@ -96,8 +96,53 @@ angular其他js（directives,service,controller等）
 
 * select
 
+1.数据格式为数组
 
+```javascript
+//html
+<select ng-model="city" ng-options="c for c in cityList"></select>
 
+//js
+$scope.cityList = ["北京", "河北", "河南", "陕西"];
+//select默认选中
+$scope.city = "北京";
+```
+
+2.数据格式为数组对象
+
+如果想要$scope.city的值是name，代码如下：
+
+```javascript
+//html
+<select ng-model="city" ng-options="c.name as c.name for c in cityList"></select>
+
+//js
+$scope.cityList = [
+    {"id": 1, "name": "北京"},
+    {"id": 2, "name": "河北"},
+    {"id": 3, "name": "河南"},
+    {"id": 4, "name": "陕西"},
+];
+//select默认选中
+$scope.city = "北京";
+```
+
+如果想要$scope.city的值是id，代码如下：
+
+```javascript
+//html
+<select ng-model="city" ng-options="c.id as c.name for c in cityList"></select>
+
+//js
+$scope.cityList = [
+    {"id": 1, "name": "北京"},
+    {"id": 2, "name": "河北"},
+    {"id": 3, "name": "河南"},
+    {"id": 4, "name": "陕西"},
+];
+//select默认选中
+$scope.city = 1;
+```
 
 ## CSS
 
