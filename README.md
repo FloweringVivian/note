@@ -89,12 +89,10 @@ $(".selector").find("option:selected").text();  //获取当前选中项的text
 
 angularjs里引入了bootstrap的日历插件datetimepicker，结果发现gulp打包之前没有问题，但gulp打包以后报错了，原因是jquery系列的js和angular系列的js都压缩到了1个js里，把jquery相关的js和angular相关的js分开压缩到两个js里就好了，顺序如下：
 
-jquery相关js压缩成的js
-angular相关js压缩成的js
-datetimepicker相关js
+jquery相关js压缩成的js <br>
+angular相关js压缩成的js <br>
+datetimepicker相关js <br>
 angular其他js（directives,service,controller等）
-
-angular
 
 * select
 
