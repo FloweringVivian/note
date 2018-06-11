@@ -192,5 +192,5 @@ table{
 
 * 当form表单里只有一个input时，点击button按钮会自动提交表单，刷新页面
 
-
+* 浏览器network中headers中的Response Headers是在服务器端设置的，Request Headers是前端可以通过ajax设置的
 
