@@ -89,6 +89,32 @@ $(".selector").find("option:selected").text();  //获取当前选中项的text
 
 ```
 
+* jquery on('click')事件多次重复触发问题
+
+```javascript
+$(function(){
+    $('#btn1').click(function () {
+        $('#btnBind').on('click',function () {
+            alert(123);
+        });
+    });
+})
+```
+
+如上面的代码，如果你点击多次'btn1'按钮，那么就会绑定多少次click事件到'btnBind'按钮上，on是绑定多少次就触发多少次的。
+
+要想它只绑定一次，可以先'off'然后再'on'。
+
+```javascript
+$(function(){
+    $('#btn1').click(function () {
+        $('#btnBind').off('click').on('click',function () {
+            alert(123);
+        });
+    });
+})
+```
+
 ## angularJs
 
 * datetimepicker
