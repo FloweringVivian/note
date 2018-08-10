@@ -141,7 +141,7 @@ console.log(timestampToTime(1403058804));//2014-06-18 10:33:24
 2.将日期格式转换成时间戳：
 
 ```javascript
-var date = new Date('2014-04-23 18:55:49:123');
+var date = new Date('2014-04-23 18:55:49');
 // 有三种方式获取
 var time1 = date.getTime();  //常用
 var time2 = date.valueOf();
