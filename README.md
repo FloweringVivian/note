@@ -86,7 +86,9 @@ $(".selector").find("option:selected").text();  //获取当前选中项的text
 * jquery ajax
 
 ```javascript
+$.ajax({
 
+})
 ```
 
 * jquery on('click')事件多次重复触发问题
