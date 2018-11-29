@@ -275,5 +275,3 @@ table{
 * 浏览器network中headers中的Response Headers是在服务器端设置的，Request Headers是前端可以通过ajax设置的
 
 
-
-
