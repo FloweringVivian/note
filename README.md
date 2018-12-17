@@ -81,6 +81,8 @@ $(".selector").find("option[text='pxx']").prop("selected",true);  //设置text�
 $(".selector").val();  //获取当前选中项的value
 
 $(".selector").find("option:selected").text();  //获取当前选中项的text
+
+$(".selector").prop('selectedIndex', 0);  //选中第一个option
 ```
 
 * jquery ajax
