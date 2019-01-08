@@ -276,6 +276,21 @@ table{
 
 * 浏览器network中headers中的Response Headers是在服务器端设置的，Request Headers是前端可以通过ajax设置的
 
+## SVN
+
+* 将online分支的代码合并到sprint分支
+
+1. 进入到online分支的项目根目录，例如dev目录，鼠标右键 -> TortoiseSVN->Merge...
+
+2. Merge type 勾选第一项 Merge a range of revisions -> next
+
+3. URL to merge from 选择online分支的dev目录 -> specific range 点击 show log按钮 -> 勾选要合并的log -> next
+
+4. 默认勾选Compare whitespaces 不用改变 -> Merge
+
+5. 如果有冲突，会高亮显示，选择最后解决冲突
+
+6. 解决完冲突以后提交
 
 
 
