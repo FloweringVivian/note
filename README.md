@@ -284,7 +284,7 @@ word-break: break-all;在火狐浏览器不生效，原因是加在了span标签
 
 * 将online分支的代码合并到sprint分支
 
-1. 进入到online分支的项目根目录，例如dev目录，鼠标右键 -> TortoiseSVN->Merge...
+1. 进入到sprint分支的项目根目录，例如dev目录，鼠标右键 -> TortoiseSVN->Merge...
 
 2. Merge type 勾选第一项 Merge a range of revisions -> next
 
