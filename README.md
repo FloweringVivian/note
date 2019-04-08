@@ -294,7 +294,9 @@ word-break: break-all;在火狐浏览器不生效，原因是加在了span标签
 
 5. 如果有冲突，会高亮显示，选择最后解决冲突
 
-6. 解决完冲突以后提交
+6. 解决冲突：选中冲突源文件-鼠标右键-TortoiseSVN-Edit conflicts (编辑冲突)，解决完冲突以后保存，选择 Mark as resolved
+
+7. 解决完冲突以后提交
 
 
 
