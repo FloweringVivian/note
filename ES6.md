@@ -1,7 +1,5 @@
 # ES6
 
-## 迭代器和for-of循环
-
 ### 1.for-of循环
 
 ```javascript
