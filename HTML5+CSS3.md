@@ -24,3 +24,16 @@ body {
 * height: 视口高度
 * device-width: 设备屏幕的宽度
 * device-height: 设备屏幕的高度
+
+移动端页面需要加入meta标签，控制浏览器按照其视口的实际大小来渲染页面
+
+```javascript
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+```
+
+禁止用户缩放：
+
+```javascript
+<meta name="viewport" content="initial-scale=1.0,user-scalable=no">
+```
+
