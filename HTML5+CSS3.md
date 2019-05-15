@@ -6,7 +6,7 @@
 body {
   background-color: #f00;
 }
-@media screen and (max-width: 960px) {
+@media screen and (min-width: 960px) and (max-width: 1080px) {
   body {
     background-color: #0f0;
   }
