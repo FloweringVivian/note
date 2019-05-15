@@ -2,7 +2,7 @@
 
 ### 1.媒体查询
 
-```javascript```
+```javascript
 body {
   background-color: #f00;
 }
