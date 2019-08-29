@@ -280,6 +280,14 @@ word-break: break-all;在火狐浏览器不生效，原因是加在了span标签
 
 * 浏览器network中headers中的Response Headers是在服务器端设置的，Request Headers是前端可以通过ajax设置的
 
+* Bootstrap弹出层model上自定义的弹出层中input输入框失效, 无法输入
+
+做项目过程中，在model弹出层上面又自定义了一个弹出层，自定义弹出层上面有input输入框，但是却获取不了焦点，无法输入。网上找了下原因，这样说的：Bootstrap框架目前只支持一层model层，即当前model层上无法再用model弹出层。 最后找到了解决方案，将弹出层  最外层div的 tabindex属性去掉即可（如下面的代码示例，将tabindex这个属性去掉，不要改变其属性值，改变属性值是没用的）记录一下，免得以后忘记。
+
+```javascript
+<div class="modal fade" id="template-modal" tabindex="-1" role="dialog" aria-hidden="true">
+```
+
 ## SVN
 
 * 将online分支的代码合并到sprint分支
