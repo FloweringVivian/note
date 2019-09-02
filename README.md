@@ -308,4 +308,3 @@ word-break: break-all;在火狐浏览器不生效，原因是加在了span标签
 
 
 
-
