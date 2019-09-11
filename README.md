@@ -272,6 +272,10 @@ table{
 
 word-break: break-all;在火狐浏览器不生效，原因是加在了span标签上不生效，加在div标签上就生效了。
 
+* strong标签和b标签
+
+strong标签表示加粗强调，b标签表示黑体，已被HTML4废弃，HTML5救回来表示关键字。
+
 ## 常见问题
 
 * 当接口返回状态码为302时，浏览器会自动把post请求变为get请求
